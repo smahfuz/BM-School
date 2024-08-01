@@ -35,7 +35,7 @@ namespace SERVICE.Services
 
         public Task InsertAsync(ClassLevel obj)
         {
-            throw new NotImplementedException();
+            return _repository.InsertAsync(obj);
         }
 
         public Task SaveChangesAsync()

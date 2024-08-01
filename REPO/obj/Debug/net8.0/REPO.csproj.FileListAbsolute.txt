@@ -9,6 +9,7 @@ C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\REPO.GeneratedMSBuildE
 C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\REPO.AssemblyInfoInputs.cache
 C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\REPO.AssemblyInfo.cs
 C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\REPO.csproj.CoreCompileInputs.cache
+C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\REPO.sourcelink.json
 C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\REPO.csproj.Up2Date
 C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\REPO.dll
 C:\Users\AC\source\repos\Web-School\REPO\obj\Debug\net8.0\refint\REPO.dll

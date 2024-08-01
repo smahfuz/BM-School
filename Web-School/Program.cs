@@ -14,7 +14,11 @@ builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IClasslevelRepository, ClassLevelRepository>();
+builder.Services.AddScoped<IDesignationRepository, DesignationRepository>();
+
+
 builder.Services.AddScoped<IClassLevelService, ClasslevelService>();
+builder.Services.AddScoped<IDesignationService, DesignationService>();
 
 var app = builder.Build();
 

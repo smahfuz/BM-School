@@ -11,7 +11,7 @@ namespace CORE.Models
     public class ClassLevel: BaseEntity
     {
         [Display(Name = "Class Name")]
-        public String Name { get; set; }
+        public string Name { get; set; }
         [Display(Name = "Room Number")]
         public int RoomNumber { get; set; }
         public List<Teacher> Teachers { get; set; }

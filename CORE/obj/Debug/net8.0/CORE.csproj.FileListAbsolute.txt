@@ -7,6 +7,7 @@ C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\CORE.GeneratedMSBuildE
 C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\CORE.AssemblyInfoInputs.cache
 C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\CORE.AssemblyInfo.cs
 C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\CORE.csproj.CoreCompileInputs.cache
+C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\CORE.sourcelink.json
 C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\CORE.dll
 C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\refint\CORE.dll
 C:\Users\AC\source\repos\Web-School\CORE\obj\Debug\net8.0\CORE.pdb

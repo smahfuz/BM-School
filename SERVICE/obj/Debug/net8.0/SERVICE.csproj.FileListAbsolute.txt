@@ -11,6 +11,7 @@ C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\SERVICE.GeneratedMS
 C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfoInputs.cache
 C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfo.cs
 C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\SERVICE.csproj.CoreCompileInputs.cache
+C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\SERVICE.sourcelink.json
 C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\SERVICE.csproj.Up2Date
 C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\SERVICE.dll
 C:\Users\AC\source\repos\Web-School\SERVICE\obj\Debug\net8.0\refint\SERVICE.dll

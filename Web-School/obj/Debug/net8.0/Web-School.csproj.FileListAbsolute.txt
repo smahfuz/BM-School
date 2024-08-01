@@ -240,6 +240,7 @@ C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\Web-School.cspro
 C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\Web-School.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\Web-School.RazorAssemblyInfo.cache
 C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\Web-School.RazorAssemblyInfo.cs
+C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\Web-School.sourcelink.json
 C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\AC\source\repos\Web-School\Web-School\obj\Debug\net8.0\staticwebassets\msbuild.Web-School.Microsoft.AspNetCore.StaticWebAssets.props
