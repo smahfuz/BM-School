@@ -25,7 +25,7 @@ namespace SERVICE.Services
 
         public Task<IEnumerable<Designation>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return _repository.GetAllAsync();
         }
 
         public Task<Designation> GetIdAsync(int id)

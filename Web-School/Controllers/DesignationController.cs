@@ -17,7 +17,8 @@ namespace Web_School.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View();
+            var obj = await _designationService.GetAllAsync();
+            return View(obj);
         }
 
         public async Task<IActionResult> Create()

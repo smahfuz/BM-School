@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\AC\\source\\repos\\Web-School\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|c:\\users\\ac\\source\\repos\\web-school\\web-school\\views\\designation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|solutionrelative:web-school\\views\\designation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|c:\\users\\ac\\source\\repos\\web-school\\web-school\\controllers\\designationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|solutionrelative:web-school\\controllers\\designationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|c:\\users\\ac\\source\\repos\\web-school\\service\\services\\designationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|solutionrelative:service\\services\\designationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|c:\\users\\ac\\source\\repos\\web-school\\service\\iservices\\idesignationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservices\\idesignationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|c:\\users\\ac\\source\\repos\\web-school\\web-school\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|solutionrelative:web-school\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|c:\\users\\ac\\source\\repos\\web-school\\web-school\\views\\designation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|solutionrelative:web-school\\views\\designation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|c:\\users\\ac\\source\\repos\\web-school\\web-school\\views\\class\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,14 +35,6 @@
       "RelativeMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|solutionrelative:web-school\\viewmodel\\designationview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|c:\\users\\ac\\source\\repos\\web-school\\service\\services\\designationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|solutionrelative:service\\services\\designationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|c:\\users\\ac\\source\\repos\\web-school\\web-school\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|solutionrelative:web-school\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0259D561-9158-46CF-B796-07D8B3D5DE4F}|CORE\\CORE.csproj|c:\\users\\ac\\source\\repos\\web-school\\core\\models\\designation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0259D561-9158-46CF-B796-07D8B3D5DE4F}|CORE\\CORE.csproj|solutionrelative:core\\models\\designation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|c:\\users\\ac\\source\\repos\\web-school\\web-school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81E89B40-B2A4-4BA6-A5D3-808455246C7F}|Web-School\\Web-School.csproj|solutionrelative:web-school\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|c:\\users\\ac\\source\\repos\\web-school\\service\\iservices\\idesignationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5210FC3-4994-4F32-AB36-8D018904572C}|SERVICE\\SERVICE.csproj|solutionrelative:service\\iservices\\idesignationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0259D561-9158-46CF-B796-07D8B3D5DE4F}|CORE\\CORE.csproj|c:\\users\\ac\\source\\repos\\web-school\\core\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,50 +106,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web-School\\Views\\Designation\\Index.cshtml",
-              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Index.cshtml",
-              "RelativeToolTip": "Web-School\\Views\\Designation\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAQwBsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T06:20:12.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DesignationView.cs",
-              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\ViewModel\\DesignationView.cs",
-              "RelativeDocumentMoniker": "Web-School\\ViewModel\\DesignationView.cs",
-              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\ViewModel\\DesignationView.cs",
-              "RelativeToolTip": "Web-School\\ViewModel\\DesignationView.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:21:06.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Create.cshtml",
-              "RelativeDocumentMoniker": "Web-School\\Views\\Designation\\Create.cshtml",
-              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Create.cshtml",
-              "RelativeToolTip": "Web-School\\Views\\Designation\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T06:21:00.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Class\\Index.cshtml",
               "RelativeDocumentMoniker": "Web-School\\Views\\Class\\Index.cshtml",
@@ -157,51 +118,100 @@
               "RelativeToolTip": "Web-School\\Views\\Class\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-31T20:24:56.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T20:24:56.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DesignationController.cs",
               "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Controllers\\DesignationController.cs",
               "RelativeDocumentMoniker": "Web-School\\Controllers\\DesignationController.cs",
               "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Controllers\\DesignationController.cs",
               "RelativeToolTip": "Web-School\\Controllers\\DesignationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAIAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAwB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T19:59:01.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ClassController.cs",
               "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Controllers\\ClassController.cs",
               "RelativeDocumentMoniker": "Web-School\\Controllers\\ClassController.cs",
               "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Controllers\\ClassController.cs",
               "RelativeToolTip": "Web-School\\Controllers\\ClassController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAuwB4AAAAIAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwBMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T19:58:17.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "IDesignationService.cs",
+              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\SERVICE\\IServices\\IDesignationService.cs",
+              "RelativeDocumentMoniker": "SERVICE\\IServices\\IDesignationService.cs",
+              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\SERVICE\\IServices\\IDesignationService.cs",
+              "RelativeToolTip": "SERVICE\\IServices\\IDesignationService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAlwA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T18:25:58.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DesignationService.cs",
               "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\SERVICE\\Services\\DesignationService.cs",
               "RelativeDocumentMoniker": "SERVICE\\Services\\DesignationService.cs",
               "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\SERVICE\\Services\\DesignationService.cs",
               "RelativeToolTip": "SERVICE\\Services\\DesignationService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAewCUAAAAMAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwBsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T18:34:46.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Create.cshtml",
+              "RelativeDocumentMoniker": "Web-School\\Views\\Designation\\Create.cshtml",
+              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Create.cshtml",
+              "RelativeToolTip": "Web-School\\Views\\Designation\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T06:21:00.391Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "DesignationView.cs",
+              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\ViewModel\\DesignationView.cs",
+              "RelativeDocumentMoniker": "Web-School\\ViewModel\\DesignationView.cs",
+              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\ViewModel\\DesignationView.cs",
+              "RelativeToolTip": "Web-School\\ViewModel\\DesignationView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T06:21:06.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web-School\\Views\\Designation\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Views\\Designation\\Index.cshtml",
+              "RelativeToolTip": "Web-School\\Views\\Designation\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T06:20:12.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Designation.cs",
               "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\CORE\\Models\\Designation.cs",
               "RelativeDocumentMoniker": "CORE\\Models\\Designation.cs",
@@ -209,12 +219,11 @@
               "RelativeToolTip": "CORE\\Models\\Designation.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T17:23:45.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T17:23:45.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\Program.cs",
               "RelativeDocumentMoniker": "Web-School\\Program.cs",
@@ -222,12 +231,11 @@
               "RelativeToolTip": "Web-School\\Program.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:17:04.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T06:17:04.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ClassLevelView.cs",
               "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\Web-School\\ViewModel\\ClassLevelView.cs",
               "RelativeDocumentMoniker": "Web-School\\ViewModel\\ClassLevelView.cs",
@@ -235,8 +243,7 @@
               "RelativeToolTip": "Web-School\\ViewModel\\ClassLevelView.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:24:54.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T06:24:54.215Z"
             },
             {
               "$type": "Document",
@@ -249,19 +256,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T19:43:35.418Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IDesignationService.cs",
-              "DocumentMoniker": "C:\\Users\\AC\\source\\repos\\Web-School\\SERVICE\\IServices\\IDesignationService.cs",
-              "RelativeDocumentMoniker": "SERVICE\\IServices\\IDesignationService.cs",
-              "ToolTip": "C:\\Users\\AC\\source\\repos\\Web-School\\SERVICE\\IServices\\IDesignationService.cs",
-              "RelativeToolTip": "SERVICE\\IServices\\IDesignationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAewAsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T18:25:58.23Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
