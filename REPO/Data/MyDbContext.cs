@@ -15,6 +15,10 @@ namespace REPO.DATA
         public DbSet<Designation> Designations { get; set; }
 
         public DbSet<ClassLevel> ClassLevels { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Course> Courses { get; set; }
+
+
 
 
 

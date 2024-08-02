@@ -41,6 +41,32 @@ namespace REPO.Migrations
                     b.ToTable("ClassLevels");
                 });
 
+            modelBuilder.Entity("CORE.Models.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClassId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClassId");
+
+                    b.ToTable("Courses");
+                });
+
             modelBuilder.Entity("CORE.Models.Designation", b =>
                 {
                     b.Property<int>("Id")
@@ -58,6 +84,32 @@ namespace REPO.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Designations");
+                });
+
+            modelBuilder.Entity("CORE.Models.Student", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClassId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClassId");
+
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("CORE.Models.Teacher", b =>
@@ -106,6 +158,28 @@ namespace REPO.Migrations
                     b.ToTable("Teachers");
                 });
 
+            modelBuilder.Entity("CORE.Models.Course", b =>
+                {
+                    b.HasOne("CORE.Models.ClassLevel", "ClassLevel")
+                        .WithMany("Courses")
+                        .HasForeignKey("ClassId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ClassLevel");
+                });
+
+            modelBuilder.Entity("CORE.Models.Student", b =>
+                {
+                    b.HasOne("CORE.Models.ClassLevel", "ClassLevel")
+                        .WithMany("Students")
+                        .HasForeignKey("ClassId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ClassLevel");
+                });
+
             modelBuilder.Entity("CORE.Models.Teacher", b =>
                 {
                     b.HasOne("CORE.Models.ClassLevel", "ClassLevel")
@@ -127,6 +201,10 @@ namespace REPO.Migrations
 
             modelBuilder.Entity("CORE.Models.ClassLevel", b =>
                 {
+                    b.Navigation("Courses");
+
+                    b.Navigation("Students");
+
                     b.Navigation("Teachers");
                 });
 
