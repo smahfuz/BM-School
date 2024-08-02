@@ -15,8 +15,9 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 
 builder.Services.AddScoped<IClasslevelRepository, ClassLevelRepository>();
 builder.Services.AddScoped<IDesignationRepository, DesignationRepository>();
+builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
 
-
+builder.Services.AddScoped<ITeacherService, TeacherService>();
 builder.Services.AddScoped<IClassLevelService, ClasslevelService>();
 builder.Services.AddScoped<IDesignationService, DesignationService>();
 
