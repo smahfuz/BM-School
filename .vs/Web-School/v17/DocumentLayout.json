@@ -218,8 +218,7 @@
               "RelativeToolTip": "Web-School\\Views\\Course\\Create.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T17:01:00.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T17:01:00.649Z"
             },
             {
               "$type": "Document",
@@ -231,8 +230,7 @@
               "RelativeToolTip": "Web-School\\Views\\Student\\Create.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T16:55:06.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T16:55:06.137Z"
             },
             {
               "$type": "Document",
@@ -244,8 +242,7 @@
               "RelativeToolTip": "Web-School\\Views\\Teacher\\Create.cshtml",
               "ViewState": "AQIAACwAAAAAAAAAAADwvzcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T15:08:07.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:08:07.303Z"
             },
             {
               "$type": "Document",
@@ -257,8 +254,7 @@
               "RelativeToolTip": "Web-School\\Views\\Student\\Index.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T14:34:31.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T14:34:31.348Z"
             },
             {
               "$type": "Document",
@@ -270,8 +266,7 @@
               "RelativeToolTip": "Web-School\\Views\\Teacher\\Index.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T10:11:44.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T10:11:44.46Z"
             },
             {
               "$type": "Document",
@@ -296,8 +291,7 @@
               "RelativeToolTip": "Web-School\\Views\\Course\\Index.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T16:57:41.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T16:57:41.067Z"
             },
             {
               "$type": "Document",
@@ -309,8 +303,7 @@
               "RelativeToolTip": "Web-School\\Controllers\\CourseController.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAA1wCIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T16:26:08.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T16:26:08.061Z"
             },
             {
               "$type": "Document",
@@ -322,8 +315,7 @@
               "RelativeToolTip": "Web-School\\Controllers\\TeacherController.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAYwCUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T08:56:11.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T08:56:11.682Z"
             },
             {
               "$type": "Document",
@@ -335,8 +327,7 @@
               "RelativeToolTip": "Web-School\\Controllers\\StudentController.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAmwCcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T12:02:45.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T12:02:45.802Z"
             },
             {
               "$type": "Document",
@@ -348,8 +339,7 @@
               "RelativeToolTip": "Web-School\\ViewModel\\TeacherView.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAYwCAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T08:56:16.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T08:56:16.501Z"
             },
             {
               "$type": "Document",
@@ -361,8 +351,7 @@
               "RelativeToolTip": "CORE\\Models\\Student.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAuwBUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T09:31:45.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T09:31:45.49Z"
             },
             {
               "$type": "Document",
@@ -374,8 +363,7 @@
               "RelativeToolTip": "CORE\\Models\\Course.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T09:45:26.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T09:45:26.178Z"
             },
             {
               "$type": "Document",
@@ -387,8 +375,7 @@
               "RelativeToolTip": "Web-School\\ViewModel\\StudentView.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T11:59:37.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T11:59:37.351Z"
             },
             {
               "$type": "Document",
@@ -400,8 +387,7 @@
               "RelativeToolTip": "Web-School\\ViewModel\\CourseView.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T11:54:53.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T11:54:53.948Z"
             },
             {
               "$type": "Document",
@@ -413,8 +399,7 @@
               "RelativeToolTip": "SERVICE\\Services\\StudentService.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAzwB0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T10:48:58.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T10:48:58.807Z"
             },
             {
               "$type": "Document",
@@ -666,8 +651,7 @@
               "RelativeToolTip": "Web-School\\Controllers\\DesignationController.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAwB4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:59:01.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T19:59:01.894Z"
             },
             {
               "$type": "Document",
