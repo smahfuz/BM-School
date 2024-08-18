@@ -32,8 +32,13 @@ namespace SERVICE.Services
 
         public Task<Student> GetIdAsync(int id)
         {
-            return null;
-            
+            return _studentRepository.GetIdAsync(id);
+
+        }
+
+        public Task<List<Student>> GetStudentByClassIdAsync(int id)
+        {
+            return _studentRepository.GetStudentByClassIdAsync( id);
         }
 
         public async Task InsertAsync(Student obj)

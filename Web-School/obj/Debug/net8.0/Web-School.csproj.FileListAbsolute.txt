@@ -517,3 +517,15 @@ E:\wevdev\BMSCHOOL\BM-School\Web-School\obj\Debug\net8.0\refint\Web-School.dll
 E:\wevdev\BMSCHOOL\BM-School\Web-School\obj\Debug\net8.0\Web-School.pdb
 E:\wevdev\BMSCHOOL\BM-School\Web-School\obj\Debug\net8.0\Web-School.genruntimeconfig.cache
 E:\wevdev\BMSCHOOL\BM-School\Web-School\obj\Debug\net8.0\ref\Web-School.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\wevdev\BMSCHOOL\BM-School\Web-School\bin\Debug\net8.0\Microsoft.JSInterop.dll

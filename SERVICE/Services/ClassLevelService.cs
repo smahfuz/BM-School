@@ -30,7 +30,7 @@ namespace SERVICE.Services
 
         public Task<ClassLevel> GetIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return _repository.GetIdAsync(id);
         }
 
         public Task InsertAsync(ClassLevel obj)

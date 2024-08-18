@@ -1,6 +1,8 @@
 ﻿using CORE.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using SERVICE.IServices;
+using SERVICE.Services;
 using Web_School.ViewModel;
 
 namespace Web_School.Controllers
@@ -8,6 +10,7 @@ namespace Web_School.Controllers
     public class ClassController : Controller
     {
         private readonly IClassLevelService _classLevelService;
+        private readonly IStudentService _studentService;
         public ClassController(IClassLevelService classLevelService)
         {
             _classLevelService = classLevelService;
@@ -36,6 +39,8 @@ namespace Web_School.Controllers
             await _classLevelService.InsertAsync(obj);
             return RedirectToAction("Index");
         }
+
+        
 
 
     }

@@ -1,0 +1,94 @@
+﻿
+@model Web_School.ViewModel.ClassStudent
+
+@{
+    ViewData["Title"] = "ClassWiseStudent";
+}
+
+<h1>ClassWiseStudent</h1>
+
+<div class="form-horizontal">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label"> Class</label>
+            <select name="ClassId" id="ClassId" class="form-control" asp-items="Model.Classes">
+                <option value="">--select class--</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Student</label>
+            <select name="StudentId" id="StudentId" class="form-control">
+                <option value="">--select Student--</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div id="loadbox" class="col-md-6">
+    </div>
+
+</div>
+
+@section Scripts {
+    <script>
+        $("#ClassId").change(function () {
+            var classId = $("#ClassId").val();
+          
+            $("#StudentId").empty();
+            $("#StudentId").append("<option value=''>--select Student--</option>");
+         
+            $.ajax({
+                type: "POST",
+                url: "/Student/GetStudent",
+                data: {did:classId},
+                success: function (response) {
+                    alert("helo");
+                    console.log(response);
+                    var student = response;
+
+
+                    $.each(student, function (key, student) {
+                        console.log(student);
+                        var option = "<option value='" + student.id + "'>" + student.name + "</option>";
+                        $("#StudentId").append(option);
+                    });
+
+
+
+                },
+                error: function (response) {
+                    alert("hello error");
+                    alert(response.message);
+                }
+
+            });
+        });  //for dep change
+
+        $("#StudentId").change(function () {
+            var studentId = $("#StudentId").val();
+            var jsonData = { id: studentId };
+
+            console.log("the data is", jsonData);
+
+            $.ajax({
+                type: "POST",
+                url: "/Student/GetStudentPartial",
+                data: jsonData,
+                success: function (response) {
+                    alert("helo");
+                    $("#loadbox").html(response);
+                },
+                error: function (response) {
+                    alert("hello error");
+                    alert(response.message);
+                }
+
+
+            });
+        });
+
+    </script>
+
+
+}

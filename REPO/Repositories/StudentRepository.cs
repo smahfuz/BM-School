@@ -1,4 +1,5 @@
 ﻿using CORE.Models;
+using Microsoft.EntityFrameworkCore;
 using REPO.DATA;
 using REPO.IRepositories;
 using System;
@@ -15,6 +16,11 @@ namespace REPO.Repositories
         public StudentRepository(MyDbContext context) : base(context)
         {
             _dbContext = context;
+        }
+
+        public async Task<List<Student>> GetStudentByClassIdAsync(int id)
+        {
+            return await _dbContext.Students.Where(x => x.ClassId == id).ToListAsync();
         }
     }
 }

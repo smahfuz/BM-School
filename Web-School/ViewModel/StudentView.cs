@@ -13,7 +13,9 @@ namespace Web_School.ViewModel
         [Required]
         public int ClassId { get; set; }
         public List<SelectListItem>?  ClassList { get; set; }
-        
+
+        public string? ClassLevel { get; set; }
+
 
     }
 }
