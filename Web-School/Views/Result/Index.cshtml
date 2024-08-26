@@ -1,0 +1,38 @@
+﻿<div class="container mt-5">
+    <h2>Cascading Dropdown Example</h2>
+    <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" class="form-control">
+            <option value="">Select Country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="state">State</label>
+        <select id="state" class="form-control">
+            <option value="">Select State</option>
+        </select>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        $('#country').change(function () {
+            var country = $(this).val();
+            var states = {
+                'USA': ['California', 'Florida', 'New York', 'Texas'],
+                'Canada': ['Alberta', 'British Columbia', 'Ontario', 'Quebec']
+            };
+            $('#state').empty();
+            $('#state').append('<option value="">Select State</option>');
+            if (country) {
+                $.each(states[country], function (index, value) {
+                    $('#state').append('<option value="' + value + '">' + value + '</option>');
+                });
+            }
+        });
+    });
+</script>
