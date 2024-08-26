@@ -28,6 +28,16 @@ namespace SERVICE.Services
             throw new NotImplementedException();
         }
 
+        public Task<List<Course>> GetCourseByClassIdAsync(int id)
+        {
+            return _courseRepository.GetCourseByClassIdAsync(id);
+        }
+
+        //public Task<List<ClassLevel>> GetCourseByClassIdAsync(int id)
+        //{
+        //    return _courseRepository.GetCourseByClassIdAsync(id);
+        //}
+
         public Task<Course> GetIdAsync(int id)
         {
             throw new NotImplementedException();
@@ -47,5 +57,7 @@ namespace SERVICE.Services
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

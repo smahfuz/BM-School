@@ -13,7 +13,7 @@ namespace SERVICE.IServices
         Task UpdateAsync(Teacher tea);
         Task DeleteAsync(Teacher tea);
         Task SaveChangesAsync();
-        Task<IEnumerable<Teacher>> GetAllAsync();
+        Task<IList<Teacher>> GetAllAsync();
         Task<Teacher> GetIdAsync(int id);
     }
 }

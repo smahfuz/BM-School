@@ -34,3 +34,21 @@ E:\wevdev\BMSCHOOL\BM-School\REPO\obj\Debug\net8.0\refint\REPO.dll
 E:\wevdev\BMSCHOOL\BM-School\REPO\obj\Debug\net8.0\REPO.pdb
 E:\wevdev\BMSCHOOL\BM-School\REPO\obj\Debug\net8.0\REPO.genruntimeconfig.cache
 E:\wevdev\BMSCHOOL\BM-School\REPO\obj\Debug\net8.0\ref\REPO.dll
+D:\WebDev\New folder\BM-School\REPO\bin\Debug\net8.0\REPO.deps.json
+D:\WebDev\New folder\BM-School\REPO\bin\Debug\net8.0\REPO.runtimeconfig.json
+D:\WebDev\New folder\BM-School\REPO\bin\Debug\net8.0\REPO.dll
+D:\WebDev\New folder\BM-School\REPO\bin\Debug\net8.0\REPO.pdb
+D:\WebDev\New folder\BM-School\REPO\bin\Debug\net8.0\CORE.dll
+D:\WebDev\New folder\BM-School\REPO\bin\Debug\net8.0\CORE.pdb
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.csproj.AssemblyReference.cache
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.AssemblyInfoInputs.cache
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.AssemblyInfo.cs
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.csproj.CoreCompileInputs.cache
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.sourcelink.json
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.csproj.Up2Date
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.dll
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\refint\REPO.dll
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.pdb
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\REPO.genruntimeconfig.cache
+D:\WebDev\New folder\BM-School\REPO\obj\Debug\net8.0\ref\REPO.dll

@@ -9,5 +9,7 @@ namespace REPO.IRepositories
 {
     public interface ICourseRepository : IRepository<Course>
     {
+        Task<List<Course>> GetCourseByClassIdAsync(int id);
+        
     }
 }

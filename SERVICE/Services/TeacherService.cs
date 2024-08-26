@@ -26,7 +26,7 @@ namespace SERVICE.Services
 
         }
 
-        public Task<IEnumerable<Teacher>> GetAllAsync()
+        public Task<IList<Teacher>> GetAllAsync()
         {
             return _repository.GetAllAsync();
 

@@ -38,3 +38,23 @@ E:\wevdev\BMSCHOOL\BM-School\SERVICE\obj\Debug\net8.0\refint\SERVICE.dll
 E:\wevdev\BMSCHOOL\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.pdb
 E:\wevdev\BMSCHOOL\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.genruntimeconfig.cache
 E:\wevdev\BMSCHOOL\BM-School\SERVICE\obj\Debug\net8.0\ref\SERVICE.dll
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\SERVICE.deps.json
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\SERVICE.runtimeconfig.json
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\SERVICE.dll
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\SERVICE.pdb
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\CORE.dll
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\REPO.dll
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\REPO.pdb
+D:\WebDev\New folder\BM-School\SERVICE\bin\Debug\net8.0\CORE.pdb
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.csproj.AssemblyReference.cache
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfoInputs.cache
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.AssemblyInfo.cs
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.csproj.CoreCompileInputs.cache
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.sourcelink.json
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.csproj.Up2Date
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.dll
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\refint\SERVICE.dll
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.pdb
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\SERVICE.genruntimeconfig.cache
+D:\WebDev\New folder\BM-School\SERVICE\obj\Debug\net8.0\ref\SERVICE.dll

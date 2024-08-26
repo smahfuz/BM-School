@@ -3,10 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Web_School</title>
+    <title>@ViewData["Title"] - SchoolMS.Web</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Web_School.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/BootstrapTheme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SchoolMS.Web.styles.css" asp-append-version="true" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href=" //cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    @RenderSection("style", required: false)
 </head>
 <body>
     <header>
@@ -34,7 +38,30 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Class" asp-action="Create">Class</a>
                         </li>
+                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Result</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-action="" asp-controller="">Student</a>
+                                <a class="dropdown-item" asp-action="ClassErStudent" asp-controller="Result">Teacher</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Result" asp-action="Index">Add Result</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="AddResultClicked" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Result</a>
+                            <div class="dropdown-menu" id="AddResult">
+                            </div>
+                        </li>
+
                     </ul>
+
+
 
                     <!-- Search bar and buttons -->
                     <div class="d-flex">
@@ -60,9 +87,11 @@
             &copy; 2024 - Web_School - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    @* <script src="~/js/getclass.js"></script> *@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)

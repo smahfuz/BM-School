@@ -15,5 +15,6 @@ namespace SERVICE.IServices
         Task SaveChangesAsync();
         Task<IEnumerable<Course>> GetAllAsync();
         Task<Course> GetIdAsync(int id);
+        Task<List<Course>> GetCourseByClassIdAsync(int id);
     }
 }

@@ -57,7 +57,7 @@ namespace REPO.Repositories
         {
             await _context.SaveChangesAsync();
         }
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IList<T>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();
         }

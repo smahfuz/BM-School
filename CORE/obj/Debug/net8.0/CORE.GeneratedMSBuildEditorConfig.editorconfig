@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CORE
-build_property.ProjectDir = E:\wevdev\BMSCHOOL\BM-School\CORE\
+build_property.ProjectDir = D:\WebDev\New folder\BM-School\CORE\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

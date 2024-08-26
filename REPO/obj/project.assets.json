@@ -4126,19 +4126,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mahfuz\\.nuget\\packages\\": {}
+    "C:\\Users\\Hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\wevdev\\BMSCHOOL\\BM-School\\REPO\\REPO.csproj",
+      "projectUniqueName": "D:\\WebDev\\New folder\\BM-School\\REPO\\REPO.csproj",
       "projectName": "REPO",
-      "projectPath": "E:\\wevdev\\BMSCHOOL\\BM-School\\REPO\\REPO.csproj",
-      "packagesPath": "C:\\Users\\Mahfuz\\.nuget\\packages\\",
-      "outputPath": "E:\\wevdev\\BMSCHOOL\\BM-School\\REPO\\obj\\",
+      "projectPath": "D:\\WebDev\\New folder\\BM-School\\REPO\\REPO.csproj",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "outputPath": "D:\\WebDev\\New folder\\BM-School\\REPO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Mahfuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4146,14 +4146,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\wevdev\\BMSCHOOL\\BM-School\\CORE\\CORE.csproj": {
-              "projectPath": "E:\\wevdev\\BMSCHOOL\\BM-School\\CORE\\CORE.csproj"
+            "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj": {
+              "projectPath": "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj"
             }
           }
         }
@@ -4162,6 +4163,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4199,7 +4205,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

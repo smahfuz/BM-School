@@ -13,7 +13,7 @@ namespace SERVICE.IServices
         Task UpdateAsync(Designation obj);
         Task DeleteAsync(Designation obj);
         Task SaveChangesAsync();
-        Task<IEnumerable<Designation>> GetAllAsync();
+        Task<IList<Designation>> GetAllAsync();
         Task<Designation> GetIdAsync(int id);
     }
 }
