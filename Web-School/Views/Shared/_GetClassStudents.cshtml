@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Web_School.ViewModel.StudentView>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .item-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .item-list li {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin-bottom: 10px;
+                background-color: #f9f9f9;
+            }
+
+                .item-list li input {
+                    margin-left: 10px;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+
+                    .item-list li input:focus {
+                        border-color: #007bff;
+                        outline: none;
+                    }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Items List</h1>
+
+        <form id="itemsForm" method="post" action="/Result/GetSubjectMark">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Subject Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count(); i++)
+                    {
+                        <tr>
+                            <td>@Model.ElementAt(i).Name</td>
+                            <td>
+                                <input type="text" name="ItemInput_@i" value="" placeholder="Enter value" />
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
