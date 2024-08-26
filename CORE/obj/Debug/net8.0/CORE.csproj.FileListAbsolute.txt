@@ -43,3 +43,18 @@ D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\refint\CORE.dll
 D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.pdb
 D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.genruntimeconfig.cache
 D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\ref\CORE.dll
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\bin\Debug\net8.0\CORE.deps.json
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\bin\Debug\net8.0\CORE.runtimeconfig.json
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\bin\Debug\net8.0\CORE.dll
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\bin\Debug\net8.0\CORE.pdb
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.csproj.AssemblyReference.cache
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.GeneratedMSBuildEditorConfig.editorconfig
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.AssemblyInfoInputs.cache
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.AssemblyInfo.cs
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.csproj.CoreCompileInputs.cache
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.sourcelink.json
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.dll
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\refint\CORE.dll
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.pdb
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\CORE.genruntimeconfig.cache
+E:\wevdev\BMSchoolTortoise\BM-School\CORE\obj\Debug\net8.0\ref\CORE.dll

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj": {}
+    "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj": {}
   },
   "projects": {
-    "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj": {
+    "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj",
+        "projectUniqueName": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj",
         "projectName": "CORE",
-        "projectPath": "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "D:\\WebDev\\New folder\\BM-School\\CORE\\obj\\",
+        "projectPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj",
+        "packagesPath": "C:\\Users\\Mahfuz\\.nuget\\packages\\",
+        "outputPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mahfuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -77,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

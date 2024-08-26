@@ -1,0 +1,90 @@
+﻿@model Web_School.ViewModel.ClassStudent
+
+@{
+    ViewData["Title"] = "ClassStudent";
+}
+
+<h1>ClassWiseSubject</h1>
+
+<div class="form-horizontal">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label">Class</label>
+            <select name="ClassId" id="ClassId" class="form-control" asp-items="Model.Classes">
+                <option value="">--select class--</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Subject</label>
+            <select name="SubjectId" id="SubjectId" class="form-control">
+                <option value="">--select Subject--</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="loadbox" class="col-md-6">
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+       
+        $("#ClassId").change(function () {
+            var classId = $("#ClassId").val();
+
+          
+            $("#SubjectId").empty();
+            $("#SubjectId").append("<option value=''>--select Subject--</option>");
+
+            
+            $.ajax({
+                type: "POST",
+                url: "/Result/GetSubject", 
+                data: { did: classId }, 
+                success: function (response) {
+                    var subjects = response;
+
+                   
+                    $.each(subjects, function (key, subject) {
+                        console.log(subject);
+                        var option = "<option value='" + subject.id + "'>" + subject.name + "</option>";
+                        $("#SubjectId").append(option);
+                    });
+                },
+                error: function (response) {
+                    alert("Error occurred: " + response.message);
+                }
+            });
+        });
+        $("#SubjectId").change(function () {
+            var classId = $("#ClassId").val();
+
+            if (!classId) {
+                alert("Please select a class first.");
+                return;
+            }
+
+            var jsonData = { id: classId };
+            console.log("The data being sent is", jsonData);
+
+            $.ajax({
+                type: "POST",
+                url: "/Result/GetClassStudents",
+                data: jsonData,
+                success: function (response) {
+                    $("#loadbox").html(response); 
+                },
+                error: function (response) {
+                    console.error("Error occurred: ", response);
+                    alert("An error occurred while processing your request.");
+                }
+            });
+        });
+
+
+        
+        $("#ClassId").select2();
+        $("#SubjectId").select2();
+    </script>
+}
