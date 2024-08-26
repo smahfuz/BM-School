@@ -23,7 +23,7 @@ namespace SERVICE.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ClassLevel>> GetAllAsync()
+        public Task<IList<ClassLevel>> GetAllAsync()
         {
             return _repository.GetAllAsync();
         }

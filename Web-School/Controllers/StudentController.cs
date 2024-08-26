@@ -1,10 +1,12 @@
 ﻿using CORE.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Update.Internal;
 using NuGet.DependencyResolver;
 using SERVICE.IServices;
 using SERVICE.Services;
 using System.CodeDom;
+using System.Security.Cryptography;
 using Web_School.ViewModel;
 
 namespace Web_School.Controllers
@@ -13,11 +15,14 @@ namespace Web_School.Controllers
     {
         private readonly IStudentService _studentService;
         private readonly IClassLevelService _classLevelService;
+        private readonly ICourseService _courseService;
         public StudentController(IStudentService studentService,
-            IClassLevelService classLevelService)
+            IClassLevelService classLevelService,
+            ICourseService courseService)
         {
             _studentService = studentService;
             _classLevelService = classLevelService;
+            _courseService = courseService;
         }
 
         public async Task<IActionResult> Index()
@@ -77,19 +82,41 @@ namespace Web_School.Controllers
             return Json(obj);
         }
 
-        public async Task<IActionResult> GetStudentPartial(int id)
+        public async Task<IActionResult> GetStudentsMarks(int id)
+        {
+            var obj = await _courseService.GetCourseByClassIdAsync(id);
+
+            var courv = new List<CourseView>();
+            for(int i=0; i<obj.Count; i++)
+            {
+                var subject = new CourseView();
+                subject.Name = obj[i].Name;
+                courv.Add(subject);
+
+            }
+            if (obj != null)
+            {
+                return PartialView("_StudentMarkInput", courv);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public async Task<IActionResult>  GetStudentPartial(int id)
         {
             Student stu = await _studentService.GetIdAsync(id);
             ClassLevel classLevel = await _classLevelService.GetIdAsync(stu.ClassId);
 
-          
+
 
             var stuv = new StudentView();
             stuv.Name = stu.Name;
             stuv.Phone = stu.Phone;
             stuv.ClassLevel = classLevel.Name;
-            
-            
+
+
             if (stuv != null)
             {
                 return PartialView("_StudentPartial", stuv);
@@ -98,6 +125,14 @@ namespace Web_School.Controllers
             {
                 return null;
             }
+
+
+            
+        }
+        [HttpPost]
+        public async Task<IActionResult> GetMark(List<CourseView> courseViews)
+        {
+            return View();
         }
     }
 }

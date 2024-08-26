@@ -20,7 +20,7 @@ namespace REPO.IRepositories
         Task SaveChangesAsync();
 
         //IEnumerable<T> GetAll();
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<IList<T>> GetAllAsync();
         //T GetId(int id);
         Task<T> GetIdAsync(int id);
 

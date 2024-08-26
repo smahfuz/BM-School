@@ -28,3 +28,18 @@ E:\wevdev\BMSCHOOL\BM-School\CORE\obj\Debug\net8.0\refint\CORE.dll
 E:\wevdev\BMSCHOOL\BM-School\CORE\obj\Debug\net8.0\CORE.pdb
 E:\wevdev\BMSCHOOL\BM-School\CORE\obj\Debug\net8.0\CORE.genruntimeconfig.cache
 E:\wevdev\BMSCHOOL\BM-School\CORE\obj\Debug\net8.0\ref\CORE.dll
+D:\WebDev\New folder\BM-School\CORE\bin\Debug\net8.0\CORE.deps.json
+D:\WebDev\New folder\BM-School\CORE\bin\Debug\net8.0\CORE.runtimeconfig.json
+D:\WebDev\New folder\BM-School\CORE\bin\Debug\net8.0\CORE.dll
+D:\WebDev\New folder\BM-School\CORE\bin\Debug\net8.0\CORE.pdb
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.csproj.AssemblyReference.cache
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.AssemblyInfoInputs.cache
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.AssemblyInfo.cs
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.csproj.CoreCompileInputs.cache
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.sourcelink.json
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.dll
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\refint\CORE.dll
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.pdb
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\CORE.genruntimeconfig.cache
+D:\WebDev\New folder\BM-School\CORE\obj\Debug\net8.0\ref\CORE.dll

@@ -40,8 +40,13 @@ namespace Web_School.Controllers
             return RedirectToAction("Index");
         }
 
-        
 
+        [HttpGet]
+        public async Task<JsonResult> GetClassList()
+        {
+            var classes = await _classLevelService.GetAllAsync();
+            return new JsonResult(classes);
+        }
 
     }
 }

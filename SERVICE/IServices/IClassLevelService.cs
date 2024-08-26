@@ -13,7 +13,7 @@ namespace SERVICE.IServices
         Task UpdateAsync(ClassLevel obj);
         Task DeleteAsync(ClassLevel obj);
         Task SaveChangesAsync();
-        Task<IEnumerable<ClassLevel>> GetAllAsync();
+        Task<IList<ClassLevel>> GetAllAsync();
         Task<ClassLevel> GetIdAsync(int id);
     }
 }
