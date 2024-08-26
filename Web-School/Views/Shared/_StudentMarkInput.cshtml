@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Web_School.ViewModel.CourseView>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .item-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .item-list li input {
+            margin-left: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .item-list li input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Items List</h1>
+
+        <form id="itemsForm" method="post" action="/YourController/YourAction">
+            <ul class="item-list">
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    <li>
+                        @Model.ElementAt(i).Name
+                        <input type="text" name="ItemInput_@i" value="" placeholder="Enter value" />
+                    </li>
+                }
+            </ul>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+@* @model YourNamespace.Models.StudentMarkInputViewModel
+
+@{
+    ViewData["Title"] = "Enter Student Marks";
+}
+
+<h2>Enter Marks for Student @Model.StudentId</h2>
+
+<form asp-action="SaveMarks" method="post">
+    <input type="hidden" asp-for="StudentId" />
+
+    @for (int i = 0; i < Model.Subjects.Count; i++)
+    {
+        <div class="form-group">
+            <label asp-for="Subjects[i].Mark">@Model.Subjects[i].SubjectName</label>
+            <input asp-for="Subjects[i].Mark" class="form-control" />
+            <span asp-validation-for="Subjects[i].Mark" class="text-danger"></span>
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Submit Marks</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+ *@
+
+
+
+ <h1>hey</h1>
