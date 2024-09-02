@@ -38,14 +38,20 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="mb-4">Items List</h1>
+        <h3 class="mb-4">
+            Class <span style="font-weight:bold; color:green;">@Model.ElementAt(0).ClassLevel</span>
+            Student Mark input of
+            <span style="font-weight:bold; color:green;">@Model.ElementAt(0).SubjectName</span> subject
+        </h3>
 
-        <form id="itemsForm" method="post" action="/Result/GetSubjectMark">
+        <form id="itemsForm" method="post" action="/Result/GetMarks">
             <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th>Student Name</th>
                         <th>Subject Name</th>
+                        <th>Phone</th>
+                        <th>Mark</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,8 +59,19 @@
                     {
                         <tr>
                             <td>@Model.ElementAt(i).Name</td>
+                            <td>@Model.ElementAt(i).SubjectName</td>
+                            <td>@Model.ElementAt(i).Phone</td>
                             <td>
-                                <input type="text" name="ItemInput_@i" value="" placeholder="Enter value" />
+                                <input type="number" name="studentViews[@i].Mark" value="" placeholder="Enter mark" required />
+                                <input type="hidden" name="studentViews[@i].Name" value="@Model.ElementAt(i).Name" />
+                                <input type="hidden" name="studentViews[@i].Grade" value="@Model.ElementAt(i).Grade" />
+                                <input type="hidden" name="studentViews[@i].SubjectName" value="@Model.ElementAt(i).SubjectName" />
+                                <input type="hidden" name="studentViews[@i].Phone" value="@Model.ElementAt(i).Phone" />
+                                <input type="hidden" name="studentViews[@i].ClassLevel" value="@Model.ElementAt(i).ClassLevel" />
+                                <input type="hidden" name="studentViews[@i].ClassId" value="@Model.ElementAt(i).ClassId" />
+                                <input type="hidden" name="studentViews[@i].CourseId" value="@Model.ElementAt(i).CourseId" />
+                                <input type="hidden" name="studentViews[@i].StudentId" value="@Model.ElementAt(i).StudentId" />
+
                             </td>
                         </tr>
                     }
@@ -62,6 +79,7 @@
             </table>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
     </div>
 </body>
 </html>

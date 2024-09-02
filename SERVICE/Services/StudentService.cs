@@ -1,13 +1,8 @@
 ﻿using CORE.Models;
 using REPO.IRepositories;
 using SERVICE.IServices;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-
 
 namespace SERVICE.Services
 {
@@ -18,11 +13,12 @@ namespace SERVICE.Services
         public StudentService(IStudentRepository studentRepository)
         {
             _studentRepository = studentRepository;
-
         }
-        public Task DeleteAsync(Student obj)
+
+        public async Task DeleteAsync(Student obj)
         {
-            throw new NotImplementedException();
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            await _studentRepository.DeleteAsync(obj);
         }
 
         public async Task<IEnumerable<Student>> GetAllAsync()
@@ -30,30 +26,35 @@ namespace SERVICE.Services
             return await _studentRepository.GetAllAsync();
         }
 
-        public Task<Student> GetIdAsync(int id)
+        public async Task<Student> GetIdAsync(int id)
         {
-            return _studentRepository.GetIdAsync(id);
-
+            var student = await _studentRepository.GetIdAsync(id);
+            if (student == null) throw new KeyNotFoundException($"Student with id {id} not found.");
+            return student;
         }
 
-        public Task<List<Student>> GetStudentByClassIdAsync(int id)
+        public async Task<List<Student>> GetStudentByClassIdAsync(int id)
         {
-            return _studentRepository.GetStudentByClassIdAsync( id);
+            var students = await _studentRepository.GetStudentByClassIdAsync(id);
+            if (students == null || students.Count == 0) throw new KeyNotFoundException($"No students found for class id {id}.");
+            return students;
         }
 
         public async Task InsertAsync(Student obj)
         {
-              await _studentRepository.InsertAsync(obj);
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            await _studentRepository.InsertAsync(obj);
         }
 
-        public Task SaveChangesAsync()
+        public async Task SaveChangesAsync()
         {
-            throw new NotImplementedException();
+            await _studentRepository.SaveChangesAsync(); // Ensure this method exists in IStudentRepository and is implemented
         }
 
-        public Task UpdateAsync(Student obj)
+        public async Task UpdateAsync(Student obj)
         {
-            throw new NotImplementedException();
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            await _studentRepository.UpdateAsync(obj);
         }
     }
 }

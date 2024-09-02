@@ -1,4 +1,5 @@
 ﻿using CORE.Models;
+using Microsoft.EntityFrameworkCore;
 using REPO.DATA;
 using REPO.IRepositories;
 using System;
@@ -18,5 +19,16 @@ namespace REPO.Repositories
             _dbContext = context;
         }
 
+        public Task<ClassLevel> SearchStudentByClassId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ClassLevel> SearchStudentByClassIdAsync(int id)
+        {
+            //return await _dbContext.Departments.Include(x => x.Patients).FirstOrDefaultAsync(x => x.Id == id);
+            return await _dbContext.ClassLevels.Include(x => x.ResultsSheets).FirstOrDefaultAsync(x => x.Id == id);
+
+        }
     }
 }

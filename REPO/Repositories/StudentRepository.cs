@@ -22,5 +22,14 @@ namespace REPO.Repositories
         {
             return await _dbContext.Students.Where(x => x.ClassId == id).ToListAsync();
         }
+
+        public async Task<List<ResultSheet>> GetResultsByStudentIdAsync(int classId)
+        {
+            return await _dbContext.ResultsSheets // Ensure this DbSet name is correct
+                .Where(x => x.ClassId == classId)
+                .Include(r => r.Course) // Include related data as needed
+                .Include(r => r.Student) // Assuming there is a Student navigation property
+                .ToListAsync();
+        }
     }
 }

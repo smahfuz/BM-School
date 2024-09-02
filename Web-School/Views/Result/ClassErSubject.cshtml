@@ -4,7 +4,7 @@
     ViewData["Title"] = "ClassStudent";
 }
 
-<h1>ClassWiseSubject</h1>
+<h1>Class Wise SubjectMark Add By Teacher</h1>
 
 <div class="form-horizontal">
     <div class="col-md-6">
@@ -32,6 +32,7 @@
        
         $("#ClassId").change(function () {
             var classId = $("#ClassId").val();
+            
 
           
             $("#SubjectId").empty();
@@ -59,13 +60,15 @@
         });
         $("#SubjectId").change(function () {
             var classId = $("#ClassId").val();
+            var subjectId = $("#SubjectId").val()
+
 
             if (!classId) {
                 alert("Please select a class first.");
                 return;
             }
 
-            var jsonData = { id: classId };
+            var jsonData = { id: classId, subId:subjectId  };
             console.log("The data being sent is", jsonData);
 
             $.ajax({

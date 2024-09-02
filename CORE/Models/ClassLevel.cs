@@ -16,6 +16,8 @@ namespace CORE.Models
         public int RoomNumber { get; set; }
         public List<Teacher> Teachers { get; set; }
         public List<Student> Students { get; set; }
+        public List<ResultSheet>? ResultsSheets { get; set; }
+
         public List<Course> Courses { get; set; }
         
 

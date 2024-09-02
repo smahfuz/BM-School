@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\wevdev\\BMSchoolTortoise\\BM-School\\SERVICE\\SERVICE.csproj": {}
+    "D:\\WebDev\\New folder\\BM-School\\SERVICE\\SERVICE.csproj": {}
   },
   "projects": {
-    "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj": {
+    "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj",
+        "projectUniqueName": "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj",
         "projectName": "CORE",
-        "projectPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj",
-        "packagesPath": "C:\\Users\\Mahfuz\\.nuget\\packages\\",
-        "outputPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\obj\\",
+        "projectPath": "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "D:\\WebDev\\New folder\\BM-School\\CORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mahfuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\wevdev\\BMSchoolTortoise\\BM-School\\REPO\\REPO.csproj": {
+    "D:\\WebDev\\New folder\\BM-School\\REPO\\REPO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\REPO\\REPO.csproj",
+        "projectUniqueName": "D:\\WebDev\\New folder\\BM-School\\REPO\\REPO.csproj",
         "projectName": "REPO",
-        "projectPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\REPO\\REPO.csproj",
-        "packagesPath": "C:\\Users\\Mahfuz\\.nuget\\packages\\",
-        "outputPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\REPO\\obj\\",
+        "projectPath": "D:\\WebDev\\New folder\\BM-School\\REPO\\REPO.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "D:\\WebDev\\New folder\\BM-School\\REPO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mahfuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,14 +99,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj": {
-                "projectPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\CORE\\CORE.csproj"
+              "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj": {
+                "projectPath": "D:\\WebDev\\New folder\\BM-School\\CORE\\CORE.csproj"
               }
             }
           }
@@ -109,6 +116,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -146,21 +158,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\wevdev\\BMSchoolTortoise\\BM-School\\SERVICE\\SERVICE.csproj": {
+    "D:\\WebDev\\New folder\\BM-School\\SERVICE\\SERVICE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\SERVICE\\SERVICE.csproj",
+        "projectUniqueName": "D:\\WebDev\\New folder\\BM-School\\SERVICE\\SERVICE.csproj",
         "projectName": "SERVICE",
-        "projectPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\SERVICE\\SERVICE.csproj",
-        "packagesPath": "C:\\Users\\Mahfuz\\.nuget\\packages\\",
-        "outputPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\SERVICE\\obj\\",
+        "projectPath": "D:\\WebDev\\New folder\\BM-School\\SERVICE\\SERVICE.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "D:\\WebDev\\New folder\\BM-School\\SERVICE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mahfuz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,14 +180,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\wevdev\\BMSchoolTortoise\\BM-School\\REPO\\REPO.csproj": {
-                "projectPath": "E:\\wevdev\\BMSchoolTortoise\\BM-School\\REPO\\REPO.csproj"
+              "D:\\WebDev\\New folder\\BM-School\\REPO\\REPO.csproj": {
+                "projectPath": "D:\\WebDev\\New folder\\BM-School\\REPO\\REPO.csproj"
               }
             }
           }
@@ -184,6 +197,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -221,7 +239,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

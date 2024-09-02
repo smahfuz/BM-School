@@ -1,0 +1,48 @@
+﻿@model List<Web_School.ViewModel.StudentResultViewModel>
+
+@{
+    // Extract all unique subjects from all students
+    var allSubjects = new HashSet<string>();
+    foreach (var studentResult in Model)
+    {
+        foreach (var subject in studentResult.SubjectMarks.Keys)
+        {
+            allSubjects.Add(subject);
+        }
+    }
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Class Name</th>
+            @foreach (var subject in allSubjects)
+            {
+                <th>@subject</th>
+            }
+            <th>Average Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var studentResult in Model)
+        {
+            <tr>
+                <td>@studentResult.StudentName</td>
+                <td>@studentResult.ClassName</td>
+                @foreach (var subject in allSubjects)
+                {
+                    <td>
+                        @if (studentResult.SubjectMarks.ContainsKey(subject))
+                        {
+                            @studentResult.SubjectMarks[subject]
+                        }
+                       
+                    </td>
+                }
+                <td>@studentResult.AverageGrade</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

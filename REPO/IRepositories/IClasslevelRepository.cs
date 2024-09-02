@@ -9,5 +9,7 @@ namespace REPO.IRepositories
 {
     public interface IClasslevelRepository : IRepository<ClassLevel>
     {
+        Task<ClassLevel> SearchStudentByClassId(int id);
+        Task<ClassLevel> SearchStudentByClassIdAsync(int id);
     }
 }
