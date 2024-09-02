@@ -16,7 +16,7 @@ namespace REPO.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.7")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -84,6 +84,41 @@ namespace REPO.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Designations");
+                });
+
+            modelBuilder.Entity("CORE.Models.ResultSheet", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClassId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Grade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Mark")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClassId");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("ResultsSheets");
                 });
 
             modelBuilder.Entity("CORE.Models.Student", b =>
@@ -169,6 +204,33 @@ namespace REPO.Migrations
                     b.Navigation("ClassLevel");
                 });
 
+            modelBuilder.Entity("CORE.Models.ResultSheet", b =>
+                {
+                    b.HasOne("CORE.Models.ClassLevel", "ClassLevel")
+                        .WithMany("ResultsSheets")
+                        .HasForeignKey("ClassId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CORE.Models.Course", "Course")
+                        .WithMany("ResultSheet")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CORE.Models.Student", "Student")
+                        .WithMany("ResultSheet")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ClassLevel");
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("CORE.Models.Student", b =>
                 {
                     b.HasOne("CORE.Models.ClassLevel", "ClassLevel")
@@ -203,14 +265,26 @@ namespace REPO.Migrations
                 {
                     b.Navigation("Courses");
 
+                    b.Navigation("ResultsSheets");
+
                     b.Navigation("Students");
 
                     b.Navigation("Teachers");
                 });
 
+            modelBuilder.Entity("CORE.Models.Course", b =>
+                {
+                    b.Navigation("ResultSheet");
+                });
+
             modelBuilder.Entity("CORE.Models.Designation", b =>
                 {
                     b.Navigation("Teachers");
+                });
+
+            modelBuilder.Entity("CORE.Models.Student", b =>
+                {
+                    b.Navigation("ResultSheet");
                 });
 #pragma warning restore 612, 618
         }

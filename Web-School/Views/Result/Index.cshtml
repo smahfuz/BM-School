@@ -1,38 +1,65 @@
-﻿<div class="container mt-5">
-    <h2>Cascading Dropdown Example</h2>
-    <div class="form-group">
-        <label for="country">Country</label>
-        <select id="country" class="form-control">
-            <option value="">Select Country</option>
-            <option value="USA">USA</option>
-            <option value="Canada">Canada</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="state">State</label>
-        <select id="state" class="form-control">
-            <option value="">Select State</option>
-        </select>
-    </div>
-</div>
+﻿@model IEnumerable<CORE.Models.ResultSheet>
 
+@{
+    ViewData["Title"] = "Index";
+}
 
+<h1>Index</h1>
 
-<script>
-    $(document).ready(function () {
-        $('#country').change(function () {
-            var country = $(this).val();
-            var states = {
-                'USA': ['California', 'Florida', 'New York', 'Texas'],
-                'Canada': ['Alberta', 'British Columbia', 'Ontario', 'Quebec']
-            };
-            $('#state').empty();
-            $('#state').append('<option value="">Select State</option>');
-            if (country) {
-                $.each(states[country], function (index, value) {
-                    $('#state').append('<option value="' + value + '">' + value + '</option>');
-                });
-            }
-        });
-    });
-</script>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Mark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mark)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

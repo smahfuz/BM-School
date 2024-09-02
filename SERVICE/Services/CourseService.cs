@@ -1,5 +1,6 @@
 ﻿using CORE.Models;
 using REPO.IRepositories;
+using REPO.Repositories;
 using SERVICE.IServices;
 using System;
 using System.Collections.Generic;
@@ -40,7 +41,7 @@ namespace SERVICE.Services
 
         public Task<Course> GetIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return _courseRepository.GetIdAsync(id);
         }
 
         public async Task InsertAsync(Course obj)

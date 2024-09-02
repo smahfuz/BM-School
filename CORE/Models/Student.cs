@@ -17,6 +17,8 @@ namespace CORE.Models
         [ForeignKey(nameof(ClassId))]
         public ClassLevel ClassLevel { get; set; }
 
+        public List<ResultSheet>? ResultSheet { get; set; }
+
 
     }
 }

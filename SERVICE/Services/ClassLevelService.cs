@@ -43,6 +43,12 @@ namespace SERVICE.Services
             throw new NotImplementedException();
         }
 
+        public async Task<ClassLevel> SearchStudentByClassIdAsync(int id)
+        {
+            return await _repository.SearchStudentByClassIdAsync(id);
+            //return await _repository.SearchStudentByClassId(id);
+        }
+
         public Task UpdateAsync(ClassLevel obj)
         {
             throw new NotImplementedException();
