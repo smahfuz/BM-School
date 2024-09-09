@@ -4,24 +4,36 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Create Students</h1>
 
-<h4>StudentView</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+<div class="student-forms">
+    <!-- Initial Form Placeholder -->
+    <div class="student-form" id="student-form-1">
+        <h4>Student #1</h4>
+        <form id="create-student-form-1" class="student-create-form" data-index="1">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Name" class="control-label">Name</label>
+                <input class="form-control" name="Name" />
             </div>
             <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
+                <label asp-for="Phone" class="control-label">Phone</label>
+                <input class="form-control" name="Phone" />
             </div>
+            @* <div class="form-group">
+                <label asp-for="ClassId" class="control-label">Class</label>
+                <select class="form-control" name="ClassId">
+                    <option value="">Select Class</option>
+                    @foreach (var classItem in Model.ClassList)
+                    {
+                        <option value="@classItem.Value">@classItem.Text</option>
+                    }
+                </select>
+                <select asp-for="ClassId" class="form-control" asp-items="Model.ClassList">
+                    <option value="">select Class</option>
+                </select>
+            </div> *@
             <div class="form-group">
                 <label asp-for="ClassId" class="control-label"></label>
                 <select asp-for="ClassId" class="form-control" asp-items="Model.ClassList">
@@ -30,11 +42,14 @@
 
                 <span asp-validation-for="ClassId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
         </form>
     </div>
+</div>
+
+<!-- Submit All and Add New Student Buttons side by side -->
+<div class="form-group mt-3">
+    <button id="addNewStudentBtn" class="btn btn-success">Add New Student</button>
+    <button id="submitAllStudentsBtn" class="btn btn-primary">Submit All Students</button>
 </div>
 
 <div>
@@ -42,5 +57,81 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            let formCount = 1;
+
+            // Add new student form when button is clicked
+            $('#addNewStudentBtn').click(function () {
+                formCount++;
+                let newForm = `
+                            <div class="student-form" id="student-form-${formCount}">
+                                <h4>Student #${formCount}</h4>
+                                <form id="create-student-form-${formCount}" class="student-create-form" data-index="${formCount}">
+                                    <div class="form-group">
+                                        <label asp-for="Name" class="control-label">Name</label>
+                                        <input class="form-control" name="Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Phone" class="control-label">Phone</label>
+                                        <input class="form-control" name="Phone" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="ClassId" class="control-label">Class</label>
+                                        <select class="form-control" name="ClassId">
+                                            <option value="">Select Class</option>
+                                            @foreach (var classItem in Model.ClassList)
+                                            {
+                                                    <option value="@classItem.Value">@classItem.Text</option>
+                                            }
+                                        </select>
+                                    </div>
+
+
+                                    
+                                </form>
+                            </div>
+                        `;
+                // Append the new form to the student-forms container
+                $('.student-forms').append(newForm);
+            });
+
+            // Submit all student forms via AJAX
+            $('#submitAllStudentsBtn').click(function (e) {
+                e.preventDefault();
+
+                let forms = $('.student-create-form');
+                let allStudentsData = [];
+
+                forms.each(function () {
+                    let form = $(this);
+                    let formData = {
+                        Name: form.find('input[name="Name"]').val(),
+                        Phone: form.find('input[name="Phone"]').val(),
+                        ClassId: form.find('select[name="ClassId"]').val()
+                    };
+
+                    allStudentsData.push(formData);
+                });
+
+                $.ajax({
+                    url: '@Url.Action("CreateMultiple")', // Assuming a "CreateMultiple" action exists in your controller
+                    type: 'POST',
+                    data: JSON.stringify(allStudentsData),
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        alert('Students added successfully!');
+                        location.href = '@Url.Action("Index")'; // Redirect to Index after successful submission
+                    },
+                    error: function (xhr, status, error) {
+                        alert('Error: ' + error);
+                    }
+                });
+            });
+        });
+    </script>
 }
