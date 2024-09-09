@@ -48,20 +48,52 @@ namespace Web_School.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(StudentView studentView)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                var obj = new Student();
-                obj.Name = studentView.Name;
-                obj.Phone = studentView.Phone;
-                obj.ClassId = studentView.ClassId;
+                var student = new Student
+                {
+                    Name = studentView.Name,
+                    Phone = studentView.Phone,
+                    ClassId = studentView.ClassId
+                };
 
-                await _studentService.InsertAsync(obj);
+                await _studentService.InsertAsync(student);
                 return RedirectToAction("Index");
             }
-            else
+
+            studentView.ClassList = (await _classLevelService.GetAllAsync()).Select(x => new SelectListItem
             {
-                return View(null);
+                Value = x.Id.ToString(),
+                Text = x.Name
+            }).ToList();
+
+            return View(studentView);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateMultiple([FromBody] List<StudentView> studentViews)
+        {
+            if (studentViews == null || !studentViews.Any())
+            {
+                return BadRequest("No student data provided.");
             }
+
+            foreach (var studentView in studentViews)
+            {
+                if (ModelState.IsValid)
+                {
+                    var student = new Student
+                    {
+                        Name = studentView.Name,
+                        Phone = studentView.Phone,
+                        ClassId = studentView.ClassId
+                    };
+
+                    await _studentService.InsertAsync(student);
+                }
+            }
+
+            return Ok("Students added successfully");
         }
 
         public async Task<IActionResult> ClassWiseStudent()
