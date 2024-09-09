@@ -50,7 +50,7 @@
                     <tr>
                         <th>Student Name</th>
                         <th>Subject Name</th>
-                        <th>Phone</th>
+                       
                         <th>Mark</th>
                     </tr>
                 </thead>
@@ -60,7 +60,7 @@
                         <tr>
                             <td>@Model.ElementAt(i).Name</td>
                             <td>@Model.ElementAt(i).SubjectName</td>
-                            <td>@Model.ElementAt(i).Phone</td>
+                            
                             <td>
                                 <input type="number" name="studentViews[@i].Mark" value="" placeholder="Enter mark" required />
                                 <input type="hidden" name="studentViews[@i].Name" value="@Model.ElementAt(i).Name" />

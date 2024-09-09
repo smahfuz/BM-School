@@ -11,7 +11,8 @@ namespace CORE.Models
     public class Student : BaseEntity
     {
         public string Name { get; set; }
-        public String Phone { get; set; }
+        public string Phone { get; set; }
+        public String Roll { get; set; }
         public int ClassId { get; set; }
 
         [ForeignKey(nameof(ClassId))]

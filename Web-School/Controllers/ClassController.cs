@@ -75,6 +75,7 @@ namespace Web_School.Controllers
                 {
                     StudentName = student.Name,
                     ClassName = classLevel.Name,
+                    Roll = student.Roll,
                     SubjectMarks = new Dictionary<string, int>()
                 };
 

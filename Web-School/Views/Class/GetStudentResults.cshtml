@@ -15,6 +15,8 @@
     <thead>
         <tr>
             <th>Student Name</th>
+            <th>Student Roll</th>
+
             <th>Class Name</th>
             @foreach (var subject in allSubjects)
             {
@@ -28,7 +30,9 @@
         {
             <tr>
                 <td>@studentResult.StudentName</td>
+                <td>@studentResult.Roll</td>
                 <td>@studentResult.ClassName</td>
+                
                 @foreach (var subject in allSubjects)
                 {
                     <td>

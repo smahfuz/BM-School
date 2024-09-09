@@ -43,12 +43,28 @@ namespace SERVICE.Services
         public async Task InsertAsync(Student obj)
         {
             if (obj == null) throw new ArgumentNullException(nameof(obj));
+
+            
+            var lastRoll = await _studentRepository.GetLastRollByClassIdAsync(obj.ClassId);
+            int newRollNumber = 1;
+
+            // if (lastRoll != null) eta dile database null thakle string k int korte jeye parbena
+            if (!string.IsNullOrEmpty(lastRoll))
+            {
+                newRollNumber = int.Parse(lastRoll) + 1; 
+            }
+
+            
+            obj.Roll = newRollNumber.ToString();
+
+            
             await _studentRepository.InsertAsync(obj);
         }
 
+
         public async Task SaveChangesAsync()
         {
-            await _studentRepository.SaveChangesAsync(); // Ensure this method exists in IStudentRepository and is implemented
+            await _studentRepository.SaveChangesAsync(); 
         }
 
         public async Task UpdateAsync(Student obj)
